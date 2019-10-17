@@ -12,20 +12,19 @@ import Default from './pages/Default.js';
 
 import { Route, Switch } from 'react-router-dom';
 
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
-import SideCart from './components/SideCart'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import SideCart from './components/SideCart';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
-
     return (
       <>
-      <Navbar />
-      <SideCart />
-      <Sidebar />
-      {/* navbar, sidebar, cart,footer*/}
+        <Navbar />
+        <Sidebar />
+        <SideCart />
+        {/* navbar, sidebar, cart,footer*/}
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
