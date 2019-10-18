@@ -4,6 +4,7 @@ import React, { Component } from "react";
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
+
   state = {
     sidebarOpen: false,
     cartOpen: false,
